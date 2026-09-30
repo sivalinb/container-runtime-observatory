@@ -1,0 +1,9 @@
+module RuntimeExperiment
+project: String = "container-runtime-observatory"
+cpus: Int(this >= 1 && this <= 4) = 1
+memoryMb: Int(this >= 256 && this <= 2048) = 256
+repeats: Int(this >= 1 && this <= 10) = 3
+durationSeconds: Int(this >= 2 && this <= 20) = 3
+allocationMb: Int(this >= 8 && this <= 128) = 64
+sampleIntervalSeconds: Float(this >= 0.2 && this <= 2) = 0.5
+anomalyContamination: Float(this > 0 && this <= 0.25) = 0.05

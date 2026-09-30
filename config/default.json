@@ -1,0 +1,13 @@
+{
+  "source_sha256": "bc625eaff33e0b4ac750f7097890b85f8173fed8c2b2ae4484b9c81974cddb2d",
+  "config": {
+    "project": "container-runtime-observatory",
+    "cpus": 1,
+    "memoryMb": 256,
+    "repeats": 3,
+    "durationSeconds": 3,
+    "allocationMb": 64,
+    "sampleIntervalSeconds": 0.5,
+    "anomalyContamination": 0.05
+  }
+}

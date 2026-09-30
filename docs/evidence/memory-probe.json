@@ -1,0 +1,127 @@
+{
+  "mode": "live Apple Container measurements",
+  "kind": "memory",
+  "config": {
+    "cpus": 1,
+    "memoryMb": 256,
+    "repeats": 3,
+    "durationSeconds": 3,
+    "allocationMb": 64,
+    "sampleIntervalSeconds": 0.5,
+    "anomalyContamination": 0.05
+  },
+  "runs": [
+    {
+      "repeat": 0,
+      "startup_ms": 1008.5420830291696,
+      "samples": [
+        {
+          "memoryUsageBytes": 31744000,
+          "cpuUsageUsec": 86666,
+          "networkRxBytes": 0,
+          "networkTxBytes": 0,
+          "blockReadBytes": 20975616,
+          "blockWriteBytes": 0,
+          "elapsed_s": 2.045604041952174,
+          "host_used_bytes": 30307418112
+        },
+        {
+          "memoryUsageBytes": 31744000,
+          "cpuUsageUsec": 86666,
+          "networkRxBytes": 0,
+          "networkTxBytes": 0,
+          "blockReadBytes": 20975616,
+          "blockWriteBytes": 0,
+          "elapsed_s": 4.673950333963148,
+          "host_used_bytes": 30413176832
+        }
+      ],
+      "guest": {
+        "guest_peak_rss_bytes": 85983232,
+        "guest_elapsed_seconds": 3.042174001
+      },
+      "stats_observed": true,
+      "contended": false
+    },
+    {
+      "repeat": 1,
+      "startup_ms": 1718.2284999871626,
+      "samples": [
+        {
+          "memoryUsageBytes": 31498240,
+          "cpuUsageUsec": 78915,
+          "networkRxBytes": 0,
+          "networkTxBytes": 0,
+          "blockReadBytes": 20926464,
+          "blockWriteBytes": 0,
+          "elapsed_s": 2.1576917080092244,
+          "host_used_bytes": 30426218496
+        },
+        {
+          "memoryUsageBytes": 31498240,
+          "cpuUsageUsec": 78915,
+          "networkRxBytes": 0,
+          "networkTxBytes": 0,
+          "blockReadBytes": 20926464,
+          "blockWriteBytes": 0,
+          "elapsed_s": 4.870021332986653,
+          "host_used_bytes": 30046404608
+        }
+      ],
+      "guest": {
+        "guest_peak_rss_bytes": 85942272,
+        "guest_elapsed_seconds": 3.036222293
+      },
+      "stats_observed": true,
+      "contended": false
+    },
+    {
+      "repeat": 2,
+      "startup_ms": 977.0740839885548,
+      "samples": [
+        {
+          "memoryUsageBytes": 31219712,
+          "cpuUsageUsec": 83673,
+          "networkRxBytes": 0,
+          "networkTxBytes": 0,
+          "blockReadBytes": 20893696,
+          "blockWriteBytes": 0,
+          "elapsed_s": 2.187441916030366,
+          "host_used_bytes": 30385750016
+        },
+        {
+          "memoryUsageBytes": 31219712,
+          "cpuUsageUsec": 83673,
+          "networkRxBytes": 0,
+          "networkTxBytes": 0,
+          "blockReadBytes": 20893696,
+          "blockWriteBytes": 0,
+          "elapsed_s": 4.904884250019677,
+          "host_used_bytes": 29981114368
+        }
+      ],
+      "guest": {
+        "guest_peak_rss_bytes": 85950464,
+        "guest_elapsed_seconds": 3.0442477930000003
+      },
+      "stats_observed": true,
+      "contended": false
+    }
+  ],
+  "summary": {
+    "startup_median_ms": 1008.5420830291696,
+    "startup_max_ms": 1718.2284999871626,
+    "samples": 6,
+    "contended": false
+  },
+  "measurement_notes": [
+    "Startup includes CLI and workload readiness, with a cached image expected.",
+    "host_used_bytes measures the entire Mac, not this VM's attributable memory.",
+    "guest_peak_rss_bytes is a high-water mark and will not fall after free.",
+    "A short run may produce no runtime stats; absence is reported, never replaced by zero."
+  ],
+  "config_provenance": {
+    "mode": "Pkl evaluated",
+    "sha256": "bc625eaff33e0b4ac750f7097890b85f8173fed8c2b2ae4484b9c81974cddb2d"
+  }
+}

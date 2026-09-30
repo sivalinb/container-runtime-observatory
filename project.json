@@ -1,0 +1,6 @@
+{
+  "slug": "container-runtime-observatory",
+  "title": "Container Runtime Observatory",
+  "description": "Measure VM lifecycle, resources, and contention.",
+  "port": 8505
+}

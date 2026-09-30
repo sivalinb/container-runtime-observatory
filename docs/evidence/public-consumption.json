@@ -1,0 +1,10 @@
+{
+  "exit_code": 0,
+  "result": {
+    "source": "nab-cpu",
+    "training_rows": 2419,
+    "evaluation_rows": 1613,
+    "flagged": 974
+  },
+  "error": ""
+}
